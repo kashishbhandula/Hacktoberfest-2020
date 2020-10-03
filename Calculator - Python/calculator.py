@@ -27,6 +27,10 @@ def mult(a, b):
 # b -- divisor
 def div(a, b):
     return a / b
+#Square function
+# a --number to square
+def square(a):
+    return a**2;
 
 def power(a, b):
     return a**b
@@ -67,6 +71,8 @@ while (True):
             print ("Quotient: ", div(a, b))
         elif (op == "^" or op == "**"):
             print ("Power: ", power(a, b))
+        elif (op=="^2"):
+            print( "your output is :"square(a))
         else:
             print ("Invalid operation...")
 
