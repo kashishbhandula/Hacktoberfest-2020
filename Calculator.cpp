@@ -17,6 +17,10 @@ void divide(int a, int b)
     cout<<"\nThe quotient is: "<<a/b;
     cout<<"\nThe remainder is: "<<a%b;
 }
+void square(int a)
+{
+    cout<<"\nThe quotient is:"<<a*a;
+    
 
 int main()
 {
@@ -26,6 +30,8 @@ int main()
     cout<<"\nPress 2 to subtract";
     cout<<"\nPress 3 to multiply";
     cout<<"\nPress 4 to divide";
+    cout<<"\nPress 5 to divide";
+    
     cout<<"\nEnter your Choice";
     cin>>choice;
 
@@ -55,6 +61,9 @@ int main()
             cin>>y;
             divide(x,y); 
             break;   
+        case 5:cout<<"\enter te number:";
+               cin>>x;
+               square(x);
     default:
         break;
     }
